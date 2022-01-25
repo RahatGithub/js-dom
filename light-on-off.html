@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #members li{
+            color: blue;
+        }
+        #btn{
+            background-color: green;
+            height: 20px;
+            width: 60px;
+            border: 0px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <ul id="members">
+            <li>Ashfak</li>
+            <li>Omur</li>
+            <li>Nafiz</li>
+            <li>Mustafiz</li>
+        </ul>
+        <button id="btn" onclick="changeColor()">on</button>
+    </main>
+
+    <script>
+        var clicked = 0;
+        function changeColor(){
+            if(clicked == 1){
+                document.body.style.backgroundColor = 'goldenrod';
+                document.getElementById('btn').innerHTML = 'off';
+                clicked = 0;
+            }
+            else{
+                document.body.style.backgroundColor = 'black';
+                document.getElementById('btn').innerHTML = 'on';
+                clicked = 1;
+            }
+        }
+    </script>
+</body>
+</html>
